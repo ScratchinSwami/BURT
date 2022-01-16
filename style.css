@@ -1,0 +1,297 @@
+@font-face {
+    font-family: Questrial;
+    src: url('https://fonts.googleapis.com/css?family=Questrial');
+}
+@font-face {
+    font-family: Poppins;
+    src: url('https://fonts.googleapis.com/css?family=Poppins');
+}
+body {
+    background-color: #04060f;
+    color: white;
+    margin-right: 120px;
+    margin-left: 120px;
+
+}
+
+.navbar {
+    width: 100%;
+    background-color: #04060f;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Poppins;
+    padding: 10px;
+
+}
+#fix {
+    position: fixed;
+    background-color: #04060f;
+    margin-top: -30px;
+    width: 90%;
+}
+/* Navbar links */
+.navbar a {
+    padding: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+
+
+}
+#navbarlogo {
+    min-width: 170px;
+    width: 170px;
+    margin-left: -25px;
+
+}
+#navbaricon {
+    min-width: 30px;
+    width: 30px;
+    margin-right: 50px;
+
+}
+.navbar:first-child{
+    float: left;
+}
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}
+
+.object{
+    width: 450px;
+    height: 450px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.landing h1 {
+    font-family: Poppins;
+    font-weight: lighter;
+    font-size: 35px;
+    width: 500px;
+    text-align: justify;
+}
+
+.landing h2 {
+    font-family: Questrial;
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: justify;
+    width: 600px;
+    line-height: 30px;
+}
+
+.landing h3 {
+    font-family: Questrial;
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: left;
+    width: 600px;
+    line-height: 30px;
+    margin-top: 80px;
+}
+.button {
+    background-color: #fb5309;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 100px;
+    box-shadow: 0 0 30px 5px #fb5309;
+}
+
+.icon {
+    width: 80px;
+}
+.feedbackicon {
+    width: 120px;
+}
+.onepager {
+    float: right;
+
+}
+
+.onepager .icon {
+    float: left;
+}
+
+#bg{
+    background-image:url(bg.png);
+    margin-top: 120px;
+}
+
+#bg2{
+    background-image:url(bg2.png);
+    margin-top: 200px;
+    background-position: center;
+    margin-bottom: 200px;
+}
+#bg3{
+    background-image:url(bg3.png);
+    background-position: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.box0 {
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    /*border: solid 1px green;*/
+    min-width: 1250px;
+
+
+}
+.box00 {
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    /*border: solid 1px white;*/
+    min-width: 1250px;
+    margin-bottom: 250px;
+    margin-top: 250px;
+}
+
+    /*hero shot*/
+.box1 {
+    margin-right: 10px;
+    margin-left: 10px;
+    flex-grow: 2;
+    /*border: solid 1px red;*/
+    text-align: left;
+    padding: 10px;
+}
+
+.box1 h3 {
+    font-family: Questrial;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+}
+    /*onepager*/
+.box11 {
+    margin-right: 10px;
+    margin-left: 10px;
+    flex-grow: 2;
+    /*border: solid 1px red;*/
+    text-align: center;
+    padding: 10px;
+    width: 500px;
+}
+.box11 h3 {
+    font-family: Questrial;
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: [col1-start] 100px  [col2-start] 450px  [col3-start] 500px [col3-end];
+    grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+    width: 550px;
+    /*background-color: #fff;*/
+    color: #444;
+    float: right;
+
+}
+
+.box {
+    /*background-color: #444;*/
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 150%;
+    text-align: center;
+
+}
+
+.box h3{
+    text-align: right;
+    line-height: 20px;
+    padding: 0;
+    margin-top: -10px;
+}
+.box img {
+    margin-bottom: 20px;
+    margin-top:20px ;
+    vertical-align: center;
+}
+.box .object img {
+    vertical-align: center;
+}
+
+.a {
+    grid-column: col1-start;
+    grid-row: row1-start;
+}
+.b {
+    grid-column: col2-start ;
+    grid-row: row1-start ;
+
+}
+.c {
+    grid-column: col1-start / col3-start;
+    grid-row: row2-start ;
+    margin-top: -20px;
+
+}
+
+.pdesc h2 {
+    font-family: Questrial;
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+    width: unset;
+    line-height: 30px;
+}
+
+.pricing {
+    align-content: center;
+    text-align: center;
+
+}
+
+
+
+.pricing h1{
+    font-family: Poppins;
+    font-weight: lighter;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 0px;
+
+}
+.pricing h2{
+    font-family: Questrial;
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+.pricing h4{
+    margin-top: 15px;
+    font-family: Questrial;
+    font-weight: lighter;
+    text-align: center;
+}
